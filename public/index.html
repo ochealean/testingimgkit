@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Upload</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="/index.css"> <!-- Added leading slash -->
 </head>
 <body>
     <form id="uploadForm">
         <label for="file1">Upload an image:</label>
         <input type="file" id="file1" name="image" accept="image/*" required>
-        <button type="button" onclick="upload()">Upload</button>
+        <button type="button" id="uploadBtn">Upload</button> <!-- Removed onclick -->
     </form>
     <script src="https://unpkg.com/imagekit-javascript@1.5.4/dist/imagekit.min.js"></script>
-    <script src="public/js/index.js"></script>
+    <script src="/js/index.js"></script> <!-- Changed path -->
 </body>
 </html>
